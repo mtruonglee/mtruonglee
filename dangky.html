@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oneta</title>
+  <link rel="shortcut icon" type="image/png" href="picture/logo-tach-nen.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    span{
+      color: red;
+    }
+  </style>
+</head>
+
+<body style="background-color: #fffffe;">
+  <h2 style="margin-top: 60px; margin-left: 100px; color: #0e172c;">Tạo Tài Khoản</h2>
+  <div
+    style="margin:20px 100px 100px 100px; padding: 50px; border: 1px solid #0e172c; border-radius: 5px; background-color: #d9d4e7;">
+    <form class="row g-3">
+      <div class="alert alert-warning" role="alert">
+
+      </div>
+      <div class="alert alert-success" role="alert">
+        Tạo tài khoản thành công! Vui lòng đến trang <a href="dangnhap.html">Đăng nhập</a>.
+      </div>
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Email <span>(*)</span></label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-5">
+        <label for="inputPassword4" class="form-label">Mật Khẩu <span>(*)</span></label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-5">
+        <label for="inputPassword4" class="form-label">Nhập Lại Mật Khẩu <span>(*)</span></label>
+        <input type="password" class="form-control" id="inputPassword5">
+      </div>
+      <div class="col-md-2">
+        <label for="inputState" class="form-label">Giới Tính <span>(*)</span></label>
+        <select id="inputState" class="form-select">
+          <option selected value="0">-Chọn-</option>
+          <option value="1">Nam</option>
+          <option value="2">Nữ</option>
+          <option value="3">Khác</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Địa Chỉ <span>(*)</span></label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Số nhà, Đường, Thành phố/Tỉnh">
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Số Điện Thoại <span>(*)</span></label>
+        <input type="number" class="form-control" id="inputTel" maxlength="10" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Tôi đồng ý với các <a href="#">điều khoản</a>.
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-primary">Đăng ký</button>
+      </div>
+      <a href="dangnhap.html">Bạn đã có tài khoản?</a>
+      <a href="index.html">Về trang chủ -></a>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="vendor/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".alert-warning").hide();
+      $(".alert-success").hide();
+      $(".btn-primary").click(function () {
+        var check_error = "";
+        var email = $("#inputEmail4").val();
+        var pass = $("#inputPassword4").val();
+        var repass = $("#inputPassword5").val();
+        var address = $("#inputAddress").val();
+        var phone = $("#inputTel").val();
+        var sex = $("#inputState").val();
+        if (email == 'undefined' || email == "")
+          check_error += "Vui lòng nhập email <br>"
+        if (pass == 'undefined' || pass == "")
+          check_error += "Vui lòng nhập mật khẩu <br>"
+        if (repass == 'undefined' || repass == "")
+          check_error += "Vui lòng nhập lại mật khẩu <br>"
+        if (address == 'undefined' || address == "")
+          check_error += "Vui lòng nhập địa chỉ <br>"
+        if (phone == 'undefined' || phone == "")
+          check_error += "Vui lòng nhập số điện thoại <br>"
+        if (sex == 0)
+          check_error += "Vui lòng chọn giới tính <br>"
+        if (pass != repass)
+          check_error += "Mật khẩu chưa trùng khớp <br>"
+        if (check_error != "") {
+          $(".alert-warning").html(check_error);
+          $(".alert-warning").show();
+        }
+        else {
+          $(".alert-warning").hide();
+          $(".alert-success").show();
+        }
+
+      });
+    });
+    $("#inputTel").numeric();
+  </script>
+</body>
+
+</html>

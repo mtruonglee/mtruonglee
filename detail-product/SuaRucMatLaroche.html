@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oneta</title>
+    <link rel="shortcut icon" type="image/png" href="../picture/logo-tach-nen.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../ChiTietSanPham.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0f0e17;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../picture/logo-tach-nen.png" alt="Logo"
+                        height="50px" width="60px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"><i class="fa fa-home"
+                                    aria-hidden="true"></i> Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sanpham.html">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Thêm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Liên Hệ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hỗ Trợ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="display: inline-flex;">
+                        <a href="../dangnhap.html"><button type="button" class="btn btn-primary"
+                                style="margin-right: 10px;">Đăng Nhập</button></a>
+                        <a href="../dangky.html"><button type="button" class="btn btn-success"
+                                style="margin-right: 10px;">Đăng Ký</button></a>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                        </form>
+                        <a href="../giohang.html" class="nav-link"><i class="fa fa-shopping-cart"
+                                style="font-size:24px;color:rgb(255, 255, 255)"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="detail-product">
+            <div class="right">
+                <img class="image" src="../picture/sua-rua-mat-laroche.jpg" alt="Error" />
+            </div>
+            <div class="left">
+                <div class="content">
+                    <div class="name-product">Sữa Rửa Mặt La-roche Posay</div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td class="product-info">Mã SP: 11111117</td>
+                                <td class="product-info">Danh mục: Sữa rửa mặt</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="product-price">599.000 ₫</div>
+                    <div class="product-info">Giới tính: Unisex</div>
+                    <div class="product-info">Xuất xứ: Đức</div>
+                    <div class="product-info">Promotion: Mã giảm giá</div>
+                    <div class="product-info">Gọi đặt mua: 0686868686</div>
+                    <div class="product-info">
+                        Số lượng
+                        <input id="sp11111117" type="nuber" name="soluong" min="1" max="10000" value="1">
+                    </div>
+                    <div class="product-button">
+                        <div class="product-button-item">
+                            <button onclick="addCart('sp11111117')" class="button button-hover">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chitiet">
+            <div>
+                <strong>Nước Tẩy Trang Gel Cream Acne Oil Control SPF 50+ PA+++</strong> là sản
+                phẩm chống nắng da mặt đến từ <strong> thương hiệu dược mỹ phẩm Eucerin</strong>, được thiết kế chuyên
+                biệt
+                dành cho da
+                dầu và da hỗn hợp. Nhờ vào công thức Tinosorb S hình thành bộ lọc tia UVA/UVB thông minh, an toàn giúp
+                bảo
+                vệ làn da hiệu quả dưới tác hại của ánh nắng mặt trời. Sản phẩm có thể sử dụng được với cả những làn da
+                bị
+                mụn trứng cá
+                hay da nhạy cảm do tiếp xúc với hóa chất và tia laser. Đặc biệt là sản phẩm không bị trôi bởi nước,
+                không
+                gây bít tắc lỗ chân lông ngay cả khi thời tiết nóng ẩm
+            </div>
+
+            <div>
+                <h2><strong>Về thương hiệu EUCERIN</strong></h2>
+            </div>
+            <div>
+                <strong>Eucerin</strong> là thương hiệu dược mỹ phẩm đến từ Đức với hơn 100 năm kinh nghiệm trong ngành
+                khoa
+                học chăm sóc da, hợp tác chặt chẽ với các chuyên gia da liễu và luôn cập nhật những công nghệ tiên tiến
+                nhất, cam kết
+                bảo đảm về chất lượng sản phẩm dựa trên tiêu chuẩn da liễu cao cấp nhất. Thương hiệu Eucerin được nhiều
+                bác
+                sĩ da liễu và dược sĩ khuyên dùng để trị mụn và dưỡng ẩm da, thích hợp cho mọi loại da mà không làm mỏng
+                da
+                và gây kích
+                ứng. Các sản phẩm của Eucerin giúp gìn giữ và phục hồi độ khỏe mạnh của làn da, giúp bạn tự tin với làn
+                da
+                khỏe mạnh và tươi sáng.
+            </div>
+
+
+            <div>
+                <h2><strong>Thành phần</strong></h2>
+            </div>
+            <div><strong>Thành phần chính</strong></div>
+            <div>
+                <ul>
+                    <li>Công nghệ quang phổ tiên tiến của Eucerin giúp ngăn ngừa tia UVA / UVB và tia HEVIS.</li>
+                    <li>Licochalcone A (chiết xuất rễ Cam Thảo) giúp chống oxy hóa, kháng viêm, làm dịu da, bảo vệ các
+                        tế
+                        bào da trước tác động của tia cực tím, ức chế sự hình thành các gốc tự do. </li>
+                    <li>Carnitine được chứng minh giảm 86% bã nhờn trên da mặt, giúp kiểm soát dầu và ngăn ngừa mụn.
+                    </li>
+                </ul>
+            </div>
+            <div><strong>Thành phần khác</strong></div>
+            <div>Xem trên bao bì sản phẩm. Đa phần các sản phẩm của mỹ phẩm Eucerin đều lành tính, tuy nhiên nên đọc kỹ
+                chi
+                tiết hướng dẫn sử dụng đi kèm.</div>
+
+
+            <div>
+                <h2><strong>Loại da phù hợp</strong></h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Sản phẩm được sản xuất chuyên biệt cho da dầu và dễ bị mụn.</li>
+                </ul>
+            </div>
+            <div>
+                <h2><strong>Ưu thế nổi bật</strong></h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Kết cấu siêu nhẹ, không nhờn rít, không hương liệu, không chứa các thành phần gây bít tắt lỗ
+                        chân
+                        lông.</li>
+                    <li>Các nghiên cứu lâm sàng và da liễu chứng minh thích hợp với làn da nhạy cảm và dễ bị mụn trứng
+                        cá.
+                    </li>
+                    <li>Đáp ứng các tiêu chuẩn cao về bảo vệ UVA và UVB được xác định bởi Mỹ phẩm Châu Âu. Mức độ bảo vệ
+                        UVA
+                        cao hơn so với khuyến cáo của EU.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2><strong>Hướng dẫn sử dụng</strong></h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Thoa đều kem chống nắng trước khi ra nắng và thoa lại sau khi bơi, khi đổ nhiều mồ hôi để bảo vệ
+                        da
+                        tối ưu.</li>
+                    <li>Cần thời gian để kem thẩm thấu vào da hoàn toàn và tránh tiếp xúc trực tiếp với
+                        quần
+                        áo hoặc các chất liệu xơ cứng sau khi thoa để không bị hao hụt liều lượng.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="box-left">
+          <h3>Oneta Cosmetic</h3>
+          <p>
+            Địa chỉ: Ninh Kiều - Cần Thơ.<br>
+            Bản quyền thuộc về Oneta Cosmetic.<br>
+            Mọi thắc mắc xin liên hệ <a href="mailto:onetacosmetic@gmail.com"
+              style="color: #ff8906;">onetacosmetic@gmail.com</a>.
+          </p>
+        </div>
+        <div class="box-right">
+          <p>
+          <h3>Contact</h3>
+          <i class="fa fa-envelope-o" aria-hidden="true">: <a style="color: #ff8906;"
+              href="mailto:onetacosmetic@gmail.com">onetacosmetic@gmail.com</a></i><br>
+          <i class="fa fa-phone-square" aria-hidden="true">: <a href="tel: +84686868686"
+              style="color: #ff8906;">0686868686</a></i><br>
+          <i class="fa fa-facebook-square" aria-hidden="true">: <a href="https://www.facebook.com/mtruong.312"
+              style="color: #ff8906;">Oneta
+              Cosmetic</a></i>
+          </p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script async src="../ThemGioHang.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+@font-face {
+    font-family: Cosmetic-thin;
+    src: url("font/Cosmetic-Thin-BF63c8aa67dcd91.otf");
+}
+
+@font-face {
+    font-family: Cosmetic-bold;
+    src: url("font/Cosmetic-Bold-BF63c8aa67dcd6e.otf");
+}
+
+@font-face {
+    font-family: Cosmetic-regular;
+    src: url("font/Cosmetic-Regular-BF63c8aa67dcd70.otf");
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner .banner-caption {
+    position: absolute;
+}
+
+.banner .img-1 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner .banner-caption .text-content {
+    font-family: Cosmetic-thin;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(238, 195, 130);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: #fffffe;
+}
+
+.banner .banner-caption p {
+    font-family: Cosmetic-bold;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    color: rgb(238, 195, 130);
+    font-size: 15px;
+    color: #a7a9be;
+}
+
+.banner .banner-caption p:nth-child(3) {
+    background-color: rgba(33, 57, 59, 255);
+    margin-left: 20px;
+    border-radius: 15px;
+    /* padding: 0px 0px 0px 20px; */
+}
+
+.banner .banner-caption p:nth-child(2) {
+    font-family: Cosmetic-thin;
+    /* color: #a7a9be; */
+}
+
+.banner .banner-caption .button {
+    font-family: Cosmetic-bold;
+    /* border-radius: 20px; */
+    padding: 10px 20px 10px 20px;
+    margin-left: 50px;
+    background-color: #ff8906;
+    color: #fffffe;
+    border-radius: 3px;
+}
+
+.banner .banner-caption .button:hover {
+    background-color: rgb(145, 122, 92);
+}
+
+main {
+    background-color: #fffffe;
+}
+
+#wp-products {
+    background-color: #0f0e17;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#wp-products .tieude h2 {
+    /* text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0); */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #fffffe;
+}
+
+
+#list-products {
+    width: 1200px;
+    width: auto;
+    display: grid;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#list-products .item {
+    width: 290px;
+    height: 374px;
+    border: 1px solid #0e172c;
+    border-radius: 10px;
+    background-color: #fffffe;
+}
+
+#list-products .item img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 17px;
+    object-fit: cover;
+    width: 87%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #615555;
+    /* border: 1px solid #626a67; */
+}
+
+#list-products .item .name {
+    text-align: center;
+    color: #0f0e17;
+    font-weight: bold;
+    margin-top: 21px;
+}
+
+#list-products .item .desc {
+    display: block;
+    text-align: center;
+    color: #2e2f3e;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color: #e53170;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#list-products .item .button-product {
+    margin-top: 7px;
+    text-align: center;
+}
+
+#list-products .item .button-product button {
+    background-color: #ff8906;
+    color: #fffffe;
+    border-radius: 3px;
+}
+
+#list-products .item .button-product button:hover {
+    border: solid #1f1f1f;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#list-products .item:hover {
+    box-shadow: 0 0 11px #fffffe;
+    border: 2px solid #fffffe;
+}
+
+.list-page {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.list-page {
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+.list-page .item {
+    margin: 0px 15px;
+    width: 37px;
+    height: 37px;
+    background: #ff8906;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.list-page .item a {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.inEmail {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.inPhone {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    background-color: #0f0e17;
+}
+
+footer .box-left {
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+footer .box-right {
+    width: 40%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+footer .box-left h3 {
+    font-size: 20px;
+    font-family: Cosmetic-bold;
+    color: #fffffe;
+}
+
+footer .box-left p {
+    font-size: 8px;
+    color: #a7a9be;
+}
+
+footer .box-right h3 {
+    font-family: Cosmetic-bold;
+    color: #fffffe;
+    font-size: 20px;
+}
+
+footer .box-right i {
+    font-size: 7px;
+    color: #a7a9be;
+}
+
+footer .box-right i a {
+    color: #a7a9be;
+}
+
+main .title-big {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+
+}
+
+.main-cart {
+    /* background-image: linear-gradient(#fbeced, #db545a); */
+    color: #111;
+    min-height: 600px;
+    height: auto;
+    padding: 60px auto 0 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media (min-width: 576px) {
+    #wp-products .tieude h2 {
+        /* text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0); */
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #fffffe;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #list-products {
+        grid-template-columns: auto auto;
+    }
+
+    footer .box-left h3 {
+        font-size: 30px;
+        font-family: Cosmetic-bold;
+        color: #fffffe;
+    }
+
+    footer .box-left p {
+        font-size: 15px;
+        color: #a7a9be;
+    }
+
+    footer .box-right h3 {
+        font-family: Cosmetic-regular;
+        color: #fffffe;
+    }
+
+    footer .box-right i {
+        font-size: 15px;
+        color: #a7a9be;
+    }
+
+    footer .box-right i a {
+        color: #a7a9be;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #list-products {
+        grid-template-columns: auto auto auto;
+    }
+
+    .banner .banner-caption .text-content {
+        font-family: Cosmetic-thin;
+        font-weight: bold;
+        font-size: 70px;
+        color: rgb(238, 195, 130);
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        color: #fffffe;
+    }
+
+    .banner .banner-caption p {
+        font-family: Cosmetic-bold;
+        text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+        color: rgb(238, 195, 130);
+        padding-left: 60px;
+        font-size: 25px;
+        color: #a7a9be;
+    }
+
+    .banner .banner-caption .button {
+        font-family: Cosmetic-bold;
+        /* border-radius: 20px; */
+        padding: 10px 20px 10px 20px;
+        margin-left: 170px;
+        background-color: #ff8906;
+        color: #fffffe;
+        border-radius: 3px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .banner .banner-caption .text-content {
+        font-family: Cosmetic-thin;
+        font-weight: bold;
+        font-size: 100px;
+        color: rgb(238, 195, 130);
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        color: #fffffe;
+    }
+
+    .banner .banner-caption p {
+        font-family: Cosmetic-bold;
+        text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+        color: rgb(238, 195, 130);
+        padding-left: 60px;
+        font-size: 25px;
+        color: #a7a9be;
+    }
+
+    .banner .banner-caption .button {
+        font-family: Cosmetic-bold;
+        /* border-radius: 20px; */
+        padding: 10px 20px 10px 20px;
+        margin-left: 170px;
+        background-color: #ff8906;
+        color: #fffffe;
+        border-radius: 3px;
+    }
+
+    footer .box-left h3 {
+        font-size: 50px;
+        font-family: Cosmetic-bold;
+        color: #fffffe;
+    }
+
+    footer .box-left p {
+        font-size: 15px;
+        color: #a7a9be;
+    }
+
+    footer .box-right h3 {
+        font-family: Cosmetic-regular;
+        color: #fffffe;
+    }
+
+    footer .box-right i {
+        font-size: 24px;
+        color: #a7a9be;
+    }
+
+    footer .box-right i a {
+        color: #a7a9be;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
